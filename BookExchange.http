@@ -1,0 +1,8 @@
+### Sample Test: Add a new book
+POST http://localhost:4000/books/add HTTP/1.1
+Content-Type: application/json
+{ "title": "Sample Book", "author": "Author Name", "description": "Book description here", "exchangeType":
+"borrow", "owner": "5fa12345678abcdef9012345", "status": "available" }
+
+### Sample Test: Retrieve all books
+GET http://localhost:4000/books HTTP/1.1
