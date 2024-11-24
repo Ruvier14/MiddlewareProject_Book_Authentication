@@ -10,21 +10,21 @@ The application follows a Model-View-Controller (MVC) architecture pattern to en
 
 Components:
 
-Users: End users who interact with the web application through browsers or clients.
-
-Web Application: The front-end of the system which serves as the interface for users to interact with the platform.
-
-Node.js HTTP App Server: The server that handles all incoming HTTP requests and serves the application.
-
-Express Layer: The middleware layer in the Node.js server, which includes:
-
-CORS Middleware: Ensures cross-origin resource sharing is handled properly.
-
-JWT Authentication: Provides secure token-based authentication and authorization.
-
-Controllers: Manage requests, interact with the database, and return appropriate responses.
-
-REST API: The application’s API endpoints, structured to perform CRUD operations on resources (e.g., users, books).
+        Users: End users who interact with the web application through browsers or clients.
+        
+        Web Application: The front-end of the system which serves as the interface for users to interact with the platform.
+        
+        Node.js HTTP App Server: The server that handles all incoming HTTP requests and serves the application.
+        
+        Express Layer: The middleware layer in the Node.js server, which includes:
+        
+        CORS Middleware: Ensures cross-origin resource sharing is handled properly.
+        
+        JWT Authentication: Provides secure token-based authentication and authorization.
+        
+        Controllers: Manage requests, interact with the database, and return appropriate responses.
+        
+        REST API: The application’s API endpoints, structured to perform CRUD operations on resources (e.g., users, books).
 
 MongoDB Atlas Collections: A cloud-based MongoDB service used to store user and book data.
 
@@ -61,65 +61,65 @@ Subsequent Requests:
 
 Features
 
-User Authentication: Sign-up and login functionality with JWT-based authentication.
-
-Book Exchange: Users can add books to the exchange, browse available books, and exchange books (borrow or trade).
-
-Protected Routes: Secure API routes accessible only by authenticated users.
-
-User Profile: View user-specific information, including their book exchange history.
-
-Tech Stack
-
-Node.js: Backend runtime environment.
-
-Express.js: Web framework for building RESTful APIs.
-
-MongoDB Atlas: Cloud-hosted database to store user and book information.
-
-JWT: Secure token-based authentication and authorization.
-
-CORS Middleware: Cross-origin resource sharing to enable client-side interactions.
-
-Bcrypt.js: For hashing user passwords securely.
+        User Authentication: Sign-up and login functionality with JWT-based authentication.
+        
+        Book Exchange: Users can add books to the exchange, browse available books, and exchange books (borrow or trade).
+        
+        Protected Routes: Secure API routes accessible only by authenticated users.
+        
+        User Profile: View user-specific information, including their book exchange history.
+        
+        Tech Stack
+        
+        Node.js: Backend runtime environment.
+        
+        Express.js: Web framework for building RESTful APIs.
+        
+        MongoDB Atlas: Cloud-hosted database to store user and book information.
+        
+        JWT: Secure token-based authentication and authorization.
+        
+        CORS Middleware: Cross-origin resource sharing to enable client-side interactions.
+        
+        Bcrypt.js: For hashing user passwords securely.
 
 API Endpoints
 
-POST /login: User login, returns a JWT token upon successful authentication.
-
-GET /books: Retrieve all available books (protected route).
-
-POST /books: Add a new book to the exchange (protected route).
-
-PUT /books/:id: Update an existing book's details (protected route).
-
-DELETE /books/:id: Remove a book from the exchange (protected route).
+        POST /login: User login, returns a JWT token upon successful authentication.
+        
+        GET /books: Retrieve all available books (protected route).
+        
+        POST /books: Add a new book to the exchange (protected route).
+        
+        PUT /books/:id: Update an existing book's details (protected route).
+        
+        DELETE /books/:id: Remove a book from the exchange (protected route).
 
 Getting Started
 Prerequisites
 
-Node.js: Ensure you have Node.js installed. If not, download it from nodejs.org.
-
-MongoDB Atlas: Set up a MongoDB Atlas account and create a cluster for your database.
+        Node.js: Ensure you have Node.js installed. If not, download it from nodejs.org.
+        
+        MongoDB Atlas: Set up a MongoDB Atlas account and create a cluster for your database.
 
 
 Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/book-exchange.git
-cd book-exchange
-
-Install dependencies:
-
-npm install
-
-Set up environment variables:
+        git clone https://github.com/your-username/book-exchange.git
+        cd book-exchange
+        
+        Install dependencies:
+        
+        npm install
+        
+        Set up environment variables:
 
 Create a .env file at the root of the project with the following variables:
 
-JWT_SECRET=your_jwt_secret_key
-MONGO_URI=your_mongodb_connection_uri
+        JWT_SECRET=your_jwt_secret_key
+        MONGO_URI=your_mongodb_connection_uri
 
 Start the server:
 
