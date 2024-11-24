@@ -11,13 +11,21 @@ The application follows a Model-View-Controller (MVC) architecture pattern to en
 Components:
 
 Users: End users who interact with the web application through browsers or clients.
+
 Web Application: The front-end of the system which serves as the interface for users to interact with the platform.
+
 Node.js HTTP App Server: The server that handles all incoming HTTP requests and serves the application.
+
 Express Layer: The middleware layer in the Node.js server, which includes:
+
 CORS Middleware: Ensures cross-origin resource sharing is handled properly.
+
 JWT Authentication: Provides secure token-based authentication and authorization.
+
 Controllers: Manage requests, interact with the database, and return appropriate responses.
+
 REST API: The application’s API endpoints, structured to perform CRUD operations on resources (e.g., users, books).
+
 MongoDB Atlas Collections: A cloud-based MongoDB service used to store user and book data.
 
 Security Flow
